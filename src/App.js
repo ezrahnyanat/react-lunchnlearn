@@ -1,25 +1,23 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Order from './components/Order'
 
 class App extends Component {
   render() {
+
+    // const Order = (props) => {
+    //   return (
+    //     <p>{props.name}: {props.drink}</p>
+    //   )
+    // }
+
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+        <h1>Hello Central Cafe</h1>
+        <Order name='Allen' drink='mocha' food='roti'/>
+        <Order name='Brad' drink='drip' food='sandwich'/>
+        <Order name='Ty' drink='latte'food='steak'/>
+        <Order />
       </div>
     );
   }
