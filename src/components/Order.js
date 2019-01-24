@@ -6,9 +6,10 @@ class Order extends Component {
   render(){
     const { name, drink, food } = this.props
     return (
-      <div style={{color: 'blue' }}>
+      <div>
       <p>{name}: {drink}</p>
       <Item food={food}/>
+      <hr />
       </div>
     )
   }
