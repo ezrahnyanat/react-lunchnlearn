@@ -1,3 +1,2 @@
-We went over `components` and `props` in React
+This is a part of lunch and learn sessions at [Life.Church](https://github.com/lifechurch) going over React basics and concepts. Co-hosted with [Michael Martin](https://github.com/michael-martin-al).
 
-https://www.youtube.com/watch?v=i4Yt7lLlFHk
