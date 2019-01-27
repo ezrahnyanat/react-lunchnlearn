@@ -1,6 +1,6 @@
 # Week 1 
 
-We went over `components` and `props` in React
+We covered `components` and `props` 
 
 https://youtu.be/i4Yt7lLlFHk
 
