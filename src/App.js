@@ -33,6 +33,14 @@ class App extends Component {
     this.nameInput.current.focus()
   }
 
+  handleDelete = (name) => {
+    const { orders } = this.state 
+    let newOrderList = orders.filter(order => order.name !== name )
+    this.setState({
+      orders: newOrderList
+    })
+  }
+
   render() {
 
     const {name, drink, food, orders} = this.state
@@ -49,12 +57,11 @@ class App extends Component {
           <input type='submit' />
         </form>
         <hr/>
-        {orders.map(order => (<Order {...order} key={order.name} />))}
-        {/* <Order name={name} drink={drink} food={food} />
-        <Order name='Allen' drink='mocha' food='roti'/>
-        <Order name='Brad' drink='drip' food='sandwich'/>
-        <Order name='Ty' drink='latte'food='steak'/>
-        <Order /> */}
+        {orders.map(order => (
+          <Order 
+            {...order} 
+            key={order.name} 
+            onDelete={this.handleDelete.bind(this, order.name)} />))}
       </div>
     );
   }
